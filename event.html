@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        padding: 20px;
+        color: red;
+        border: 2px;
+        font-weight: 600;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>this is event in JS</p>
+        <p id='para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, iure. Soluta explicabo quisquam atque libero error repellendus sit adipisci necessitatibus! Laudantium earum modi vel animi eaque itaque, illo aut possimus.</p>
+
+    </div>
+    <button id='btn' onclick="hide()">show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+            para.addEventListener('mouseover', function run(){
+                console.log('mouse inside');
+            });
+
+
+        function hide(){
+            
+
+            // btn = document.getElementById('btn');
+            // btn = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+            
+        }
+    </script>
+</body>
+</html>

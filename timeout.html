@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>this is settimeout nd cleartiemout</p>
+        <p id='timehere'>the time right now is</p>
+    </div>
+    <button id= 'btn' onclick="showtime()">Click here to show time</button>
+    <script>
+        console.log("this is timeout JS");
+
+        function greet(name){
+            console.log("hello good morning" + name);
+
+        }
+    //     timeout  = setTimeout(greet, 5000, 'harry');  //no need to call fucntion seperately
+    //     console.log(timeout);
+
+    //     clearTimeout(timeout);
+        // intervalid = setInterval(greet, 1000, "harry");
+        // clearInterval(intervalid);
+        
+
+        function displaytime(){
+            time = new Date();  //saving time in time variale
+            console.log(time);  //console is using time 
+            document.getElementById('time').innerHTML = time; //console is displying time in inner html
+
+        }
+        setInterval(displaytime, 1000);
+
+        function showtime(){
+            if(timehere.style.display !='none'){
+                displaytime();
+            }
+            else{
+                timehere.style.display='block';
+            }
+        }
+
+        
+    </script> 
+</body>
+</html>

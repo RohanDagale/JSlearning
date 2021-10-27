@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'this is string';
+        var string1 = 'this is a new string';
+        console.log(string1);
+
+        let a = 'u';    //let use to define variable
+        {
+            let a = 'u2';
+            console.log(a);    //scope 
+        }
+        console.log(a);
+
+        const b  = 'this cannot be changed';
+        // b = 'this is changed';   can't change variable name
+        console.log(b);
+
+        let age  = 2;
+        if(age>18){
+            console.log("you can drink water");
+        }
+        else if (age==2){
+            console.log("go drink milk");
+        }
+        else{
+            console.log("you can drink cold drink");
+        }
+
+
+        const cup = 45;
+        switch(cup){
+            case 4:
+                console.log("the value if cup is 4");
+                break;
+            case 45:
+                console.log("the value of cup is 45"); 
+                break;
+            default:
+                console.log("the value of cup is not mention");
+                break;
+        }
+        
+    </script>
+</body>
+</html>

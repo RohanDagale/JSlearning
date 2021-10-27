@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>this is date and time in JS <span id="time"></span></p>
+    </div>
+    <script>
+        let nowdate = new Date();
+        console.log(nowdate);
+
+
+        let day = nowdate.getDate();
+        console.log(day);
+
+        console.log(Date.now());
+
+        function updatetime(){
+            time.innerHTML = new Date();
+            console.log(time)
+        }
+
+    </script>
+</body>
+</html>

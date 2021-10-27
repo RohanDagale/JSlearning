@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ='main' class="container">
+        <p>this is DOM file(document object module)</p>
+        <ul id='nav'>
+            <li>home </li>
+            <li>contact</li>
+            <li>servies</li>
+            <li>about us</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>this is same named container</p>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let container =document.getElementsByClassName('container'); //getting class using this attribute
+        console.log(container);
+
+        let sel = document.querySelector('.container');  //this is class and id selector
+        console.log("selector return 1 ", sel);
+
+        let bar  = document.querySelector('#nav');
+        console.log("selector return 2  ", bar);
+
+        let all   = document.querySelectorAll('.container');
+        console.log(all);
+    </script>
+</body>
+</html>
